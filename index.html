@@ -19,6 +19,21 @@
             font-family: Ubuntu, sans-serif;
         }
 
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: bold;
+                border-bottom: 2px solid #676767;
+            }
+        }
+
         .image-scroll-container {
             width: 650px;
             height: 420px;
@@ -54,6 +69,7 @@
 </head>
 <body>
 <div class="container">
+    <h1>Image Scroll</h1>
     <div class="image-scroll-container">
         <div class="image-list">
             <div class="card">
