@@ -10,7 +10,7 @@
             font-size: 1rem;
             box-sizing: border-box;
             text-decoration: none;
-            color: black;
+            color: white;
             font-weight: normal;
             cursor: default;
         }
@@ -26,6 +26,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: #313952;
 
             h1 {
                 font-size: 2rem;
@@ -38,6 +39,13 @@
             width: 650px;
             height: 420px;
             overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+
+            display: flex;
+
+             .card {
+                scroll-margin: 0;
+            }
         }
 
         .image-list {
@@ -48,11 +56,12 @@
         .card {
             display: flex;
             position: relative;
+            scroll-snap-align: start;
 
             .image-title {
                 font-size: 2rem;
                 font-weight: bold;
-                background-color: #9fffeb;
+                background-color: #125e4b;
                 width: 50px;
                 height: 400px;
                 padding-bottom: 10px;
