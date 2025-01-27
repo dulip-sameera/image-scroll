@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Scroll</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+            cursor: default;
+        }
+
+        body {
+            font-family: Ubuntu, sans-serif;
+        }
+
+        .card {
+            display: flex;
+
+            .image-title {
+                font-size: 2rem;
+                font-weight: bold;
+                background-color: #9fffeb;
+                padding: 10px;
+
+                writing-mode: sideways-lr;
+                text-orientation: mixed;
+            }
+
+            img {
+                width: 600px;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--      Image Card-->
+    <div class="card">
+        <div class="image-title">
+            Cat
+        </div>
+        <img src="/images/cat.jpg" alt="Cat Image">
+    </div>
+</div>
+</body>
+</html>
